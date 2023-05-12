@@ -149,12 +149,10 @@ function lightModeProperties() {
 //INITIALISE UI
 function init() {
   //initialise dark-mode variable to false;
-  //darkMode = true -> dark mode enable karna h 
-  //darMode = false -> light mode enable karna h 
+ 
   darkMode = false;
 
-  //HW
-// const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
 
   const value = localStorage.getItem("dark-mode");
 
@@ -173,8 +171,8 @@ function init() {
   }
 
 
-  //by default, pranaygupta ki info show krre h UI pr
-  getUserData(url + "thepranaygupta");
+  //by default, myprofile will be shown
+  getUserData(url + "kaisar-sofi");
 }
 
 init();
